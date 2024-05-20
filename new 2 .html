@@ -1,0 +1,234 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hegycsucsok</title>
+    <style>
+        p.valaszok
+        {
+             padding-left   : 54px; 
+             padding-bottom : 24px;
+        }
+    
+    </style>
+</head>
+<body>
+    <form name='teszt'>
+
+        <h1>Hegységek és hegycsúcsok teszt</h1>
+        <p>1. Melyik hegységünek a legmagasabb pontja a <b>Csóványos</b>?</p>
+        <p class='valaszok'>
+            <input type=radio name='v1' value="Bakacsony">Badacsony<br>
+            <input type=radio name='v1' value="Bakony">Bakony<br>
+            <input type=radio name='v1' value="Börzsöny">Börzsöny<br>
+            <input type=radio name='v1' value="Bükk">Bükk<br>
+        </p>
+
+        <p>2. Melyik a <b>Zemplén-hegyég</b> legmasabbb csúcsa?<p>
+            <p class='valaszok'>
+                <select name="v2" multiple>
+                    <option value="Nagy-Bálvány"> Nagy-Bálvány</option>
+                    <option value="Nagy-Hideghegy">Nagy-Hideghegy</option>
+                    <option value="Nagy-Inóc">Nagy-Inóc</option>
+                    <option value="Nagy-Milic">Nagy-Milic</option>
+                    <option value="Nagy-Tubas">Nagy-Tubas</option>
+                </select>
+            </p>
+
+        <p>3. Melyek a <b>Dunántúli-középhegység</b> részel?<br> <i>Több helyes válasz is lehetséges!</i> </p>
+    </form>
+
+
+           
+
+  
+
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<title>Hegységek és hegycsúcsok teszt</title>
+</head>
+<body>
+    <h1>Hegységek és hegycsúcsok teszt</h1>
+    <form name="teszt">
+        <ol>
+            <li>
+                Melyik hegységünknek a legmagasabb pontja a <b>Csóványos</b>?<br>
+                <input type="radio" name="v1" value="Badacsony"> Badacsony<br>
+                <input type="radio" name="v1" value="Bakony"> Bakony<br>
+                <input type="radio" name="v1" value="Börzsöny"> Börzsöny<br>
+                <input type="radio" name="v1" value="Bükk"> Bükk<br>
+            </li><br>
+            <li>
+                Melyik a <b>Zempléni-hegység</b> legmagasabb csúcsa?<br>
+                <select name="v2" multiple>
+                    <option value="Nagy-Bálvány">Nagy-Bálvány</option>
+                    <option value="Nagy-Hideghegy">Nagy-Hideghegy</option>
+                    <option value="Nagy-Inóc">Nagy-Inóc</option>
+                    <option value="Nagy-Milic">Nagy-Milic</option>
+                    <option value="Nagy-Tubes">Nagy-Tubes</option>
+                </select>
+            </li><br>
+            <li>
+                Melyek a <b>Dunántúli-középhegység</b> részel?<br><br> <i>Több helyes válasz is lehetséges!</i> <br><br>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" name="v3" value="Budai-hg."> Budai-hegység</td>
+                        <td><input type="checkbox" name="v3" value="Mecsek"> Mecsek</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="v3" value="Cserhát"> Cserhát</td>
+                        <td><input type="checkbox" name="v3" value="Pilis"> Pilis</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="v3" value="Gerecse"> Gerecse</td>
+                        <td><input type="checkbox" name="v3" value="Vértes"> Vértes</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="v3" value="Keszthelyi-hg."> Keszthelyi-hegység</td>
+                        <td><input type="checkbox" name="v3" value="Zselic"> Zselic</td>
+                    </tr>
+                </table>
+            </li><br>
+            <li>
+                Melyik hegységünkben található <b>Galyatető</b>?<br>
+                <input type="text" name="v4">
+            </li><br>
+            <li>
+                Melyik térkép jelzi pirossal a <b>Bükk-hegység</b>et?<br>
+                <table style="width: 25%; text-align: center;">
+                    <tr>
+                        <td>
+                            <label style="display: block;">
+                                <input type="radio" name="v5" value="A" style="display: none;">
+                                <img src="hegycsucsok/img/1.png" alt="A" style="width: 250px; cursor: pointer;" onclick="this.previousElementSibling.checked = true;"> <!-- egy checkbox állapotát módosítja, ha egy másik elemre kattintasz -->
+                            </label>
+                        </td>
+                        <td>
+                            <label style="display: block;">
+                                <input type="radio" name="v5" value="B" style="display: none;">
+                                <img src="hegycsucsok/img/2.png" alt="B" style="width: 250px; cursor: pointer;" onclick="this.previousElementSibling.checked = true;">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label style="display: block;">
+                                <input type="radio" name="v5" value="C" style="display: none;">
+                                <img src="hegycsucsok/img/3.png" alt="C" style="width: 250px; cursor: pointer;" onclick="this.previousElementSibling.checked = true;">
+                            </label>
+                        </td>
+                        <td>
+                            <label style="display: block;">
+                                <input type="radio" name="v5" value="D" style="display: none;">
+                                <img src="hegycsucsok/img/4.png" alt="D" style="width: 250px; cursor: pointer;" onclick="this.previousElementSibling.checked = true;">
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </li><br>
+            <li>
+                Milyen magas hegycsúcs az <b>Írottkő</b>? <output name="amount" id="amount"> méter</output><br>
+                <div class="range-container">
+                    <span class="range-label">700</span>
+                    <input type="range" class="range-slider" name="v6" min="700" max="1014" value="" oninput="amount.value = v6.value">
+                    <span class="range-label">1014</span><br>
+                </div>
+                
+            </li><br>
+            <li>
+                <b>Hány darab 1000 méter feletti</b> hegycsúcs van Magyarországon?<br>
+                <input type="number" name="v7" min="0" value="">
+            </li><br>
+        </ol>
+
+        <hr align=left>
+        <p align='center'>
+            <input type=button name='gomb' value='Teszt lezárása és a válaszok elküldése' onclick=' ertekel(); '>
+        </p>
+
+    </form>
+
+</body>
+</html>
+
+<script>
+    function ertekel() {
+        let pontok = 0; // Kezdő érték
+    
+        // 1. kérdés
+        if (document.teszt.v1[2].checked) {
+            pontok += 2;
+        } else if (document.teszt.v1.value) {
+            pontok -= 1;
+        }
+    
+        // 2. kérdés
+        if (document.teszt.v2.value === "Nagy-Milic") {
+            pontok += 2;
+        } else if (document.teszt.v2.value) {
+            pontok -= 1;
+        }
+    
+        // 3. 
+        const helyes_valaszok = ["Budai-hg.", "Gerecse", "Keszthelyi-hg.", "Pilis", "Vértes"];
+        let jok = 0;
+        let rosszak = 0;
+        document.querySelectorAll('input[name="v3"]:checked').forEach((checkbox) => { // (querySelectorAll)kiválasztjuk az összes kiválasztott checkbox-ot, majd a forEach ciklusban vizsgáljuk, hogy az adott checkbox értéke
+            if (helyes_valaszok.includes(checkbox.value)) {
+                jok++;
+            } else {
+                rosszak++;
+            }
+        });
+        pontok += jok - rosszak;
+        if (pontok < 0) pontok = 8;
+    
+        // 4. kérdés
+        if (document.teszt.v4.value.trim().toLowerCase() === "mátra") { //trim() - eltávolítja a space-t a karakter mindkét oldaláról 
+            pontok += 2;
+        }
+    
+        // 5. kérdés
+        if (document.teszt.v5.value === "A") {
+            pontok += 2;
+        } else if (document.teszt.v5.value) {
+            pontok -= 1;
+        }
+    
+        // 6. kérdés
+        if (parseInt(document.teszt.v6.value) === 882) { //str elemzi az értéket, és az első egész számot adja vissza
+            pontok += 2;
+        }
+    
+        // 7. kérdés
+        if (parseInt(document.teszt.v7.value) === 1) {
+            pontok += 2;
+        } else if (document.teszt.v7.value) {
+            pontok -= 1;
+        }
+    
+        // Értékelés
+        let eredmeny = "";
+        if (pontok >= 18) {
+            eredmeny = "kiváló";
+        } else if (pontok >= 15) {
+            eredmeny = "ügyes";
+        } else if (pontok >= 10) {
+            eredmeny = "átlagos";
+        } else if (pontok >= 5) {
+            eredmeny = "nem túl jó";
+        } else {
+            eredmeny = "problémás";
+        }
+    
+        alert("Pontszámod: " + pontok + "\nÉrtékelés: " + eredmeny);
+    }
+    </script>
